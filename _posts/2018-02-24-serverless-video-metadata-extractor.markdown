@@ -276,7 +276,9 @@ Above, we pull out quite a few details from the event source (the SNS success no
 
 ### Wrapping Up
 
-At this point, the service should be ready to test. The simplest way to do so is to open up the AWS console in browser, navigate to your bucket, and manually upload an `.mp4`. 
+At this point, the service is almost ready to test. First however, you'll need to make sure you've deployed! This should just be a matter of running the command `serverless deploy`.
+
+Once your service is successfully deployed to AWS, the simplest way to test it out is to open up the S3 console, navigate to your bucket, and manually upload an `.mp4`. 
 
 If all goes well, you should soon see the generated .json metadata file alongside the uploaded mp4. If Rekognition has done its job, this should identify any celebrities present in the video, along with matching timecodes for when they appeared. 
 
